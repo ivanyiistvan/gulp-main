@@ -1,0 +1,11 @@
+if env === 'dev'
+	- for (var i = 0; i < main_bower_files.length; i++)
+		- var file = main_bower_files[i].substring(4)
+		script(type="text/javascript", src=file)
+	script(type="text/javascript", src='js/main.js')
+else
+	- for (var i = 0; i < bower_components.length; i++)
+		- var file = bower_components[i]
+		- var fileNameLength = file.length
+		script(type="text/javascript", src="js/" + file.substring(0, fileNameLength - 2) + "min.js")
+	script(type="text/javascript", src="js/main.min.js")

@@ -1,0 +1,27 @@
+{
+	"name": "gulp-project",
+	"private": true,
+	"dependencies": {
+		"jquery": "1.9.1",
+		"modernizr": "~2.8.2",
+		"bootstrap-sass": "2.3.2",
+		"css3-mediaqueries-js": "*"
+	},
+	"overrides": {
+		"jquery": {
+			"main": "jquery.js",
+			"path": "js/jquery.js"
+		},
+		"modernizr": {
+			"main": "modernizr.js",
+			"ignore": true
+		},
+		"bootstrap": {
+			"ignore": true
+		},
+		"bootstrap-sass": {
+			"ignore": true
+		}
+	},
+	"devDependencies": {}
+}
